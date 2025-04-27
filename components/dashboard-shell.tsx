@@ -158,7 +158,7 @@ export function DashboardShell() {
                       height={50}
                       alt="GameZone"
                     />
-                    <span className="font-heading text-xl tracking-wider text-white uppercase">
+                    <span className="font-heading text-xl tracking-wider text-pink-500 uppercase">
                       GameZone
                     </span>
                   </Link>
@@ -184,8 +184,9 @@ export function DashboardShell() {
             </Sheet>
             <Link href="/" className="hidden items-center gap-2 md:flex">
               <Image src="/logo.png" width={50} height={50} alt="GameZone" />
-              <span className="font-heading text-xl tracking-wider text-white uppercase">
-                GameZone
+              <span className="font-heading text-xl tracking-wider font-bold uppercase">
+                <span className="text-pink-500">game</span>
+                <span className="text-sky-500">Zone</span>
               </span>
             </Link>
             <div className="hidden md:flex">
