@@ -189,9 +189,9 @@ export function DashboardOverview() {
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-600 font-bold text-white">
                     {player.rank}
                   </div>
-                  <div className="relativeh-10 w-10 overflow-hidden rounded-full">
+                  <div className="relative h-10 w-10 overflow-hidden rounded-full">
                     <Image
-                    fill
+                      fill
                       src={player.avatar || "/placeholder.svg"}
                       alt={player.name}
                       className="h-full w-full object-cover"

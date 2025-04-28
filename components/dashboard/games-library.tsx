@@ -380,7 +380,7 @@ export function GamesLibrary() {
                 {filteredGames.map((game) => (
                   <div
                     key={game.id}
-                    className="group overflow-hidden rounded-lg border border-gray-800 bg-gray-950 transition-all hover:border-gray-700"
+                    className="group flex flex-col overflow-hidden rounded-lg border border-gray-800 bg-gray-950 transition-all hover:border-gray-700"
                   >
                     <div className="relative aspect-video overflow-hidden">
                       <Image
@@ -406,7 +406,7 @@ export function GamesLibrary() {
                       </div>
                       {game.isNew && <Badge className="absolute right-2 top-2 bg-green-600">New</Badge>}
                     </div>
-                    <div className="p-4">
+                    <div className="p-4 flex-1 grow h-full flex flex-col">
                       <div className="mb-2 flex items-center justify-between">
                         <h3 className="font-medium text-white">{game.title}</h3>
                         <div className="flex items-center text-yellow-500">
@@ -419,7 +419,7 @@ export function GamesLibrary() {
                         <span className="mx-2">•</span>
                         <span>{game.releaseYear}</span>
                       </div>
-                      <div className="flex flex-wrap gap-1">
+                      <div className="flex-1 flex flex-wrap gap-1">
                         {game.tags.slice(0, 3).map((tag, i) => (
                           <Badge key={i} variant="outline" className="border-gray-700 text-gray-400">
                             {tag}
@@ -427,11 +427,8 @@ export function GamesLibrary() {
                         ))}
                       </div>
                       <div className="mt-4 flex justify-between">
-                        <Button variant="outline" size="sm" className="border-gray-700">
+                        <Button variant="outline" size="sm" className="border-gray-700 w-full">
                           Details
-                        </Button>
-                        <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
-                          Install
                         </Button>
                       </div>
                     </div>

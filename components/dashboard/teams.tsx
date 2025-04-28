@@ -327,7 +327,7 @@ export function TeamsPage() {
                     onClick={() => setSelectedTeam(team)}
                   >
                     <div className="flex items-center gap-4">
-                      <div className="relativeh-16 w-16 overflow-hidden rounded-lg border border-gray-800">
+                      <div className="relative h-16 w-16 overflow-hidden rounded-lg border border-gray-800">
                         <Image
                         fill
                           src={team.logo || "/placeholder.svg"}
